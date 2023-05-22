@@ -1,13 +1,9 @@
-import AboutBio from './AboutBio'
-import Faqs from './Faqs'
+import { ReactNode } from 'react'
+import { useOutletContext } from 'react-router-dom'
 
 const MainBody = () => {
-  return (
-    <div className="flex flex-col w-3/4 bg-white m-auto p-4">
-      <AboutBio />
-      <Faqs />
-    </div>
-  )
+  const outlet = useOutletContext() as ReactNode
+  return <div className="flex flex-col bg-white m-auto p-4">{outlet}</div>
 }
 
 export default MainBody

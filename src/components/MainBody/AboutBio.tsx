@@ -2,7 +2,7 @@ import bioPhoto from './media/mike-yams.jpg'
 
 const AboutBio = () => {
   return (
-    <div className="flex flex-col items-center p-4">
+    <div className="flex flex-col items-center w-3/4 bg-white m-auto p-4">
       <h6 className="text-xl font-semibold text-gray-800 p-2">
         Chemical-free produce from our fields to your table.
       </h6>

@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from './media/logo.png'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -21,15 +22,31 @@ const Header = () => {
           </p>
         </div>
         <div className="links flex justify-between ">
-          <p className="text-gray-800 text-lg font-semibold hover:underline cursor-pointer">
+          <NavLink
+            to="/"
+            className="text-gray-800 text-lg font-semibold hover:underline cursor-pointer"
+          >
             About Us
-          </p>
-          <p className="text-gray-800 text-lg font-semibold hover:underline cursor-pointer">
+          </NavLink>
+
+          <NavLink
+            to="csa"
+            className="text-gray-800 text-lg font-semibold hover:underline cursor-pointer"
+          >
             CSA Info
-          </p>
-          <p className="text-gray-800 text-lg font-semibold hover:underline cursor-pointer">
-            Gallery
-          </p>
+          </NavLink>
+          <NavLink
+            to="faqs"
+            className="text-gray-800 text-lg font-semibold hover:underline cursor-pointer"
+          >
+            FAQs
+          </NavLink>
+          <NavLink
+            to="our-pork"
+            className="text-gray-800 text-lg font-semibold hover:underline cursor-pointer"
+          >
+            Our Pork
+          </NavLink>
         </div>
       </div>
     </div>

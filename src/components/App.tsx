@@ -1,16 +1,26 @@
-import Banner from './Banner/Banner'
-import Header from './Header/Header'
-import React from 'react'
-import MainBody from './MainBody/MainBody'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Faqs from './FAQs/Faqs'
+import SharedLayout from './SharedLayout'
+import AboutBio from './MainBody/AboutBio'
+import CsaJoin from './CsaJoin/CsaJoin'
+import Pork from './Pork/Pork'
+
 function App() {
   return (
-    <div className="m-auto bg-slate-200">
-      <nav className="sticky top-0 w-full bg-slate-200">
-        <Header />
-      </nav>
-      <Banner />
-      <MainBody />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<AboutBio />} />
+          <Route path="csa" element={<CsaJoin />} />
+          <Route path="faqs" element={<Faqs />} />
+          <Route path="our-pork" element={<Pork />} />
+          {/* <Route
+            path="contact"
+            element={<Contact />}
+          /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
