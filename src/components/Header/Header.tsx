@@ -12,7 +12,7 @@ const Header = () => {
   }
 
   return (
-    <div className="flex flex-wrap justify-around w-screen h-40 text-white bg-slate-600 md:flex-nowrap md:h-48">
+    <div className="flex flex-wrap justify-around w-screen h-40 text-white bg-light-nav-grey md:flex-nowrap md:h-48">
       {/* <!-- LOGO --> */}
       <NavLink to="/" className="h-40 w-auto">
         <img
@@ -48,7 +48,7 @@ const Header = () => {
           isMenuHidden ? 'hidden' : ''
         } md:flex md:w-3/4`}
       >
-        <div className="menu flex flex-col bg-slate-500 items-stretch w-screen text-xl text-center transform md:flex-row md:translate-y-0 md:space-x-5 md:items-center md:justify-end md:pr-10 md:bg-slate-600">
+        <div className="menu flex flex-col bg-slate-500 items-stretch w-screen text-xl text-center transform md:flex-row md:translate-y-0 md:space-x-5 md:items-center md:justify-end md:pr-10 md:bg-nav-grey">
           <NavLink
             onClick={handleClick}
             to="/"

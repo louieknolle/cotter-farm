@@ -3,7 +3,7 @@ import bannerImg from './media/fields-house-distance.jpeg'
 const Banner = () => {
   return (
     <div
-      className="flex justify-center items-start bg-cover h-[30rem]"
+      className="flex justify-center items-start bg-cover h-[30rem] w-full"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
       <div className="flex flex-col justify-center items-center mt-5">
