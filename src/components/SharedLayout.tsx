@@ -4,11 +4,11 @@ import MainBody from './MainBody/MainBody'
 
 const SharedLayout = () => {
   return (
-    <div className="m-auto h-full bg-light-green">
-      <nav className="sticky top-0 w-full bg-nav-grey">
+    <div className="m-auto h-screen bg-light-green flex flex-col overflow-auto">
+      <nav className="sticky top-0 w-full">
         <Header />
       </nav>
-      <main className="flex flex-col items-center w-3/4 bg-off-white m-auto">
+      <main className="flex flex-col flex-grow items-center w-full mx-auto text-light-orange">
         <Outlet />
       </main>
     </div>

@@ -10,6 +10,7 @@ module.exports = {
       'burnt-red': '#730f1f',
       'nav-grey': '#374151',
       'light-nav-grey': '#4b5563',
+      'very-light-nav-grey': '#9ca3af',
       'off-white': '#f9f9f9'
     }
   },
