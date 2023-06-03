@@ -12,7 +12,7 @@ const Header = () => {
   }
 
   return (
-    <div className="flex flex-wrap justify-around w-screen h-40 text-white bg-burnt-red md:flex-nowrap md:h-48">
+    <div className="flex flex-wrap justify-around w-screen h-40 text-white bg-nav-grey md:h-48 bg-opacity-80">
       {/* <!-- LOGO --> */}
       <NavLink to="/" className="h-40 w-auto self-center">
         <img
@@ -24,14 +24,14 @@ const Header = () => {
       {/* <!-- MenuButton --> */}
       <button
         onClick={handleClick}
-        className="z-30 flex items-center justify-end flex-grow pr-3 focus:outline-none md:hidden"
+        className="z-30 flex items-center justify-end flex-grow pr-10 focus:outline-none md:hidden"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-8 h-8"
           fill="none"
           viewBox="0 0 24 24"
-          stroke="currentColor"
+          stroke="white"
         >
           <path
             strokeLinecap="round"
@@ -46,15 +46,22 @@ const Header = () => {
       <div
         className={`navlink-container ${
           isMenuHidden ? 'hidden' : ''
-        } md:flex md:w-3/4`}
+        } md:flex w-full md:w-3/4 `}
       >
-        <div className="menu flex flex-col bg-off-white items-stretch w-screen text-xl text-center text-light-orange transform md:bg-burnt-red md:flex-row md:translate-y-0 md:space-x-5 md:items-center md:justify-end md:pr-10">
+        <div className="menu pt-4 border-b-golden-yellow border-b-8 md:border-none flex flex-col bg-opacity-80  bg-nav-grey w-full text-2xl text-center text-white-white transition-transform md:flex-row md:translate-y-0 md:space-x-5 md:items-center md:justify-end md:pr-10">
           <NavLink
             onClick={handleClick}
             to="/"
             className="h-10 leading-10 md:border-none block"
           >
             About Us
+          </NavLink>
+          <NavLink
+            onClick={handleClick}
+            to="/"
+            className="h-10 leading-10 md:border-none block"
+          >
+            Contact
           </NavLink>
           <NavLink
             onClick={handleClick}
@@ -68,7 +75,7 @@ const Header = () => {
             to="faqs"
             className="h-10 leading-10 md:border-none block"
           >
-            FAQS
+            F.A.Q.s
           </NavLink>
           <NavLink
             onClick={handleClick}
