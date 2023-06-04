@@ -12,7 +12,7 @@ const Banner = () => {
       }}
     >
       <div className="flex flex-col justify-center items-center text-white-white font-bold max-w-2xl w-full text-center">
-        <h1 className="text-4xl">Cotter Farm CSA</h1>
+        <h1 className="text-4xl pb-10">Cotter Farm CSA</h1>
         <h4 className="text-2xl">
           Chemical-free produce from our fields to your table.
         </h4>
