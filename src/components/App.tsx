@@ -4,6 +4,7 @@ import SharedLayout from './SharedLayout'
 import AboutBio from './MainBody/AboutBio'
 import CsaJoin from './CsaJoin/CsaJoin'
 import Pork from './Pork/Pork'
+import Contact from './Contact/Contact'
 
 function App() {
   return (
@@ -14,10 +15,7 @@ function App() {
           <Route path="csa" element={<CsaJoin />} />
           <Route path="faqs" element={<Faqs />} />
           <Route path="our-pork" element={<Pork />} />
-          {/* <Route
-            path="contact"
-            element={<Contact />}
-          /> */}
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>

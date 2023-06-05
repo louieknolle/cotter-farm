@@ -79,7 +79,7 @@ const Header = () => {
           </NavLink>
           <NavLink
             onClick={handleClick}
-            to="/"
+            to="/contact"
             className="h-10 leading-10 md:border-none block hover:underline hover:decoration-light-orange"
           >
             Get in Touch

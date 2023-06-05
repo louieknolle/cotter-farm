@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import backgroundImage from './media/produce.jpeg'
+import backgroundImage from './media/produce-basket.jpeg'
 
 const BannerCarousel = () => {
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0)
@@ -23,7 +23,7 @@ const BannerCarousel = () => {
 
   return (
     <div
-      className="w-full h-36 flex justify-center bg-cover bg-center text-white text-2xl my-6"
+      className="w-full h-36 md:h-48 flex justify-center align-bottom bg-cover bg-center text-white text-2xl my-6"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundPosition: 'center',
@@ -31,7 +31,7 @@ const BannerCarousel = () => {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <p className="text-white-white text-center font-bold">
+      <p className="text-white-white text-center font-bold self-end bg-nav-grey w-full">
         {quotes[currentQuoteIndex]}
       </p>
     </div>
