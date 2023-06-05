@@ -12,11 +12,11 @@ const Header = () => {
   }
 
   return (
-    <div className="flex flex-wrap justify-around w-screen h-30 text-dark-nav-grey font-bold bg-blue-grey md:h-40 ">
+    <div className="flex flex-wrap justify-around w-screen h-24 md:h-36  text-dark-nav-grey font-bold bg-blue-grey ">
       {/* <!-- LOGO --> */}
-      <NavLink to="/" className="h-40 w-auto self-center">
+      <NavLink to="/" className="h-full w-auto self-center">
         <img
-          className="mx-auto h-full w-auto"
+          className="mx-auto h-24 md:h-36 w-auto"
           src={logo}
           alt="Cotter Farm logo"
         />
