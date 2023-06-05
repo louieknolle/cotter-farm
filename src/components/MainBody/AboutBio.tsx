@@ -1,6 +1,8 @@
 import Banner from 'components/Banner/Banner'
 import bioPhoto from './media/mike-yams.jpg'
 import Feed from './FbFeed'
+import BannerCarousel from './BannerCarousel'
+import Footer from './Footer'
 
 const AboutBio = () => {
   return (
@@ -27,7 +29,8 @@ const AboutBio = () => {
             for the first time.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row md:items-center md:justify-evenly">
+
+        {/* <div className="flex flex-col md:flex-row md:items-center md:justify-evenly">
           <div className="flex flex-col items-center justify-center w-full m-auto">
             <h4 className="text-2xl font-semibold text-gray-800 p-2">
               See life at the farm:
@@ -47,8 +50,10 @@ const AboutBio = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-        </div>
+        </div> */}
       </div>
+      <BannerCarousel />
+      <Footer />
     </>
   )
 }

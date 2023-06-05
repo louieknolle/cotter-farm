@@ -48,41 +48,41 @@ const Header = () => {
           isMenuHidden ? 'hidden' : ''
         } md:flex w-full md:w-3/4 `}
       >
-        <div className="menu pt-4 border-b-light-orange border-b-8 border-t-light-orange border-t-2 md:border-none flex flex-col   bg-blue-grey w-full text-2xl text-center transition-transform md:flex-row md:translate-y-0 md:space-x-5 md:items-center md:justify-end md:pr-10">
+        <div className="menu border-b-light-orange border-b-8 border-t-light-orange border-t-2 md:border-none flex flex-col   bg-blue-grey w-full text-2xl text-center transition-transform md:flex-row md:translate-y-0 md:space-x-5 md:items-center md:justify-end md:pr-10">
           <NavLink
             onClick={handleClick}
             to="/"
-            className="h-10 leading-10 md:border-none block"
+            className="h-10 leading-10 md:border-none block hover:underline hover:decoration-light-orange"
           >
             About Us
           </NavLink>
           <NavLink
             onClick={handleClick}
-            to="/"
-            className="h-10 leading-10 md:border-none block"
-          >
-            Contact
-          </NavLink>
-          <NavLink
-            onClick={handleClick}
             to="csa"
-            className="h-10 leading-10 md:border-none block"
+            className="h-10 leading-10 md:border-none block hover:underline hover:decoration-light-orange"
           >
             CSA Info
           </NavLink>
           <NavLink
             onClick={handleClick}
             to="faqs"
-            className="h-10 leading-10 md:border-none block"
+            className="h-10 leading-10 md:border-none block hover:underline hover:decoration-light-orange"
           >
             F.A.Q.s
           </NavLink>
           <NavLink
             onClick={handleClick}
             to="our-pork"
-            className="h-10 leading-10 md:border-none block"
+            className="h-10 leading-10 md:border-none block hover:underline hover:decoration-light-orange"
           >
             Pork
+          </NavLink>
+          <NavLink
+            onClick={handleClick}
+            to="/"
+            className="h-10 leading-10 md:border-none block hover:underline hover:decoration-light-orange"
+          >
+            Get in Touch
           </NavLink>
         </div>
       </div>
